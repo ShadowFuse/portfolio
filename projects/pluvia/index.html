@@ -1,0 +1,14 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#1e3736"><title>PLUVIA — Дождь</title><meta name="description" content="Лес под запотевшим стеклом. Живые капли дождя. Проведи рукой — и посмотри глубже."><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='%23cdece3' d='M16 2C12 9 6 17 6 22a10 10 0 0020 0C26 17 20 9 16 2Z'/%3E%3C/svg%3E"><link rel="stylesheet" href="style.css?v=7"></head>
+<body>
+<div id="forest" aria-hidden="true"></div><canvas id="fog" aria-hidden="true"></canvas><canvas id="distant-rain" aria-hidden="true"></canvas><canvas id="water" aria-hidden="true"></canvas><div class="vignette" aria-hidden="true"></div><div id="cursor" aria-hidden="true"><span>+</span></div>
+<div class="site-content">
+<header class="glass header"><a href="#home" class="brand" aria-label="PLUVIA — главная"><svg viewBox="0 0 24 30" aria-hidden="true"><path d="M12 2C9 8 3 15 3 20a9 9 0 0018 0C21 15 15 8 12 2Z"/><path d="M7 20c0 3 2 5 5 5"/></svg>pluvia</a><button id="sound" class="glass-button sound" aria-pressed="false" aria-label="Включить звук дождя"><span class="sound-bars" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span id="sound-label">Включить звук</span></button></header>
+<main>
+<section class="hero" id="home"><div class="hero-title"><span class="eyebrow">ИНТЕРАКТИВНЫЙ ЭКСПЕРИМЕНТ · ARSLY</span><h1>Дождь.</h1><p>Проведи по стеклу — открой лес за каплями.</p><button class="glass-button immerse" id="enter">Скрыть интерфейс <span>↗</span></button></div>
+<div class="glass controls" id="experience"><div class="control-caption"><span class="status-dot"></span><span>СЕЙЧАС ЗА СТЕКЛОМ<strong id="mode-name">Тихий дождь</strong></span></div><div class="modes" role="group" aria-label="Сила дождя"><button data-mode="0" aria-pressed="false"><span class="drop-symbol">⠂</span>Морось</button><button class="active" data-mode="1" aria-pressed="true"><span class="drop-symbol">⠒</span>Дождь</button><button data-mode="2" aria-pressed="false"><span class="drop-symbol">⠿</span>Ливень</button></div><div class="fog-control"><label for="fog-level">Запотевание</label><input id="fog-level" type="range" min="15" max="100" value="78" aria-label="Запотевание"></div><button id="clear-glass" class="clear-button" title="Очистить всё стекло" aria-label="Очистить всё стекло">Очистить</button></div></section>
+
+</main></div>
+<div class="immersive-controls glass"><span><span class="status-dot"></span> Никуда не спеши.</span><button id="exit" class="glass-button">Вернуться <span>×</span></button></div><div id="notice" role="status"></div>
+<a class="audio-credit" href="audio-credits.html" target="_blank" rel="noopener">Записи дождя ↗</a>
+<script src="rain-v2.js?v=7"></script><script src="background-rain.js?v=7"></script><script src="app.js?v=7"></script>
+</body></html>
